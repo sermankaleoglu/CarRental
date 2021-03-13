@@ -21,11 +21,11 @@ namespace Business.Concrete
             if (car.CarName.Length>2 && car.DailyPrice>0)
             {
                 _carDal.Add(car);
-                Console.WriteLine("Added!!");
+                Console.WriteLine(car.CarName+"Added!!");
             }
             else
             {
-                Console.WriteLine("Try Again!!");
+                Console.WriteLine("Araba ismi minimum 2 karakter olmalı ve günlük fiyatı 0'dan büyük olmalıdır.");
             }
 
         }
